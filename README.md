@@ -18,11 +18,11 @@ Ubuntu 22.04 (both natively and in a Docker container, both on native Ubuntu and
 
 
 ## Supported IDEs
-Jetbrains IntelliJ IDEA (Ultimate, Community) with https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij & https://plugins.jetbrains.com/plugin/7322-python-community-edition
+IntelliJ IDEA (Ultimate, Community) by Jetbrains with https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij & https://plugins.jetbrains.com/plugin/7322-python-community-edition
 
-Microsoft Visual Studio Code
+Visual Studio Code by Microsoft, optionally inside a DevContainer (tip: clone using https, not ssh to share credentials via credential helper store)
 
-Posit PBC RStudio IDE
+RStudio IDE by Posit PBC
 
 ## Supported Sources for Dependences
 * anything that can be installed via shellscript on Ubuntu 22.04, in particular:
