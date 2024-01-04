@@ -1,0 +1,8 @@
+rule main:
+    input:
+        "./data/input/input.json"
+    output:
+        "./data/output/output.json"
+    shell: >-
+        echo {input} > {output}
+        
