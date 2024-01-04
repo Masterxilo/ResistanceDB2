@@ -15,4 +15,8 @@ RUN apt-get update && apt-get install -y \
     sudo \
     && rm -rf /var/lib/apt/lists/*
 
-
+# create non root user, this is common practice in docker containers and is required for vscode devcontainers and good interoperability in general especially when it comes to file permissions
+RUN useradd -ms /bin/bash -G sudo ubuntu
+RUN echo "ubuntu ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+# switch to ubuntu user
+USER ubuntu
