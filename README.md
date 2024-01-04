@@ -33,6 +33,9 @@ RStudio IDE by Posit PBC
     * anything available via Anaconda/Conda/Mamba/Mambaforge https://anaconda.org/anaconda/repo
 
 # TODO, Further Ideas
+* monolotic makefile?
+* every compute script should run independently too, and in an IDE with debuggability, single stepping
+
 * automatic formatting
 * lint all code, in particular shell code too using shellcheck or similar (static analysis)
 * decide if ./data/temp is needed - could also use /tmp... but maybe we would want to see it.. generate tempfilename in these dirs for traceability...
