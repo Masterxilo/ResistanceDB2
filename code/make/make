@@ -2,4 +2,8 @@
 set -euo pipefail
 trap 'echo FATAL ERROR EXIT CODE $? AT $0:$LINENO' ERR
 
-make SHELL='bash -euxo pipefail' --debug --file ./code/make/Makefile
+# jobs is double ncores
+make \
+    SHELL='bash -euxo pipefail' --debug \
+    --jobs $(($(nproc) * 2)) \
+    --file ./code/make/Makefile

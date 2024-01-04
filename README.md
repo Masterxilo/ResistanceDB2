@@ -16,6 +16,14 @@ Windows 10 (only natively, no Windows container support)
 
 Ubuntu 22.04 (both natively and in a Docker container, both on native Ubuntu and on Windows via WSL)
 
+
+## Supported IDEs
+Jetbrains IntelliJ IDEA (Ultimate, Community) with https://plugins.jetbrains.com/plugin/6632-r-language-for-intellij & https://plugins.jetbrains.com/plugin/7322-python-community-edition
+
+Microsoft Visual Studio Code
+
+Posit PBC RStudio IDE
+
 ## Supported Sources for Dependences
 * anything that can be installed via shellscript on Ubuntu 22.04, in particular:
 * anything available via `apt`/Debian package: https://packages.ubuntu.com/ and other repositories

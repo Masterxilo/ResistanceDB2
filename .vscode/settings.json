@@ -1,5 +1,6 @@
 {
     "terminal.integrated.scrollback": 100000,
     "explorer.compactFolders": false,
+    "git.postCommitCommand": "sync",
     "explorer.confirmDelete": false,
 }
