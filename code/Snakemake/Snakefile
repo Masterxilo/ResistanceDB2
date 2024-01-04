@@ -1,3 +1,5 @@
+# TODO decide if we want to use this
+
 rule main:
     input:
         "./data/input/input.json"

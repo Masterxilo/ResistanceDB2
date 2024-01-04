@@ -27,7 +27,12 @@ RStudio IDE by Posit PBC
 ## Supported Sources for Dependences
 * anything that can be installed via shellscript on Ubuntu 22.04, in particular:
 * anything available via `apt`/Debian package: https://packages.ubuntu.com/ and other repositories
-* R: anything available on CRAN https://cran.r-project.org/web/packages/available_packages_by_date.html or indirectly via pacman/BiocManager
+* R: anything available on CRAN https://cran.r-project.org/web/packages/available_packages_by_date.html or indirectly via pacman/BiocManager/pak/devtools/remotes
 * Python:
     * anything installable via pip, usually from https://pypi.org/
     * anything available via Anaconda/Conda/Mamba/Mambaforge https://anaconda.org/anaconda/repo
+
+# TODO, Further Ideas
+* automatic formatting
+* lint all code, in particular shell code too using shellcheck or similar (static analysis)
+* decide if ./data/temp is needed - could also use /tmp... but maybe we would want to see it.. generate tempfilename in these dirs for traceability...
