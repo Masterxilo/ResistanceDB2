@@ -1,13 +1,1 @@
-{
-  "args": {
-    "hello": "world"
-  }, 
-  "headers": {
-    "Accept": "*/*", 
-    "Host": "httpbin.org", 
-    "User-Agent": "curl/7.81.0", 
-    "X-Amzn-Trace-Id": "Root=1-65973b0b-42372c0c023e915732f127cd"
-  }, 
-  "origin": "82.220.105.79", 
-  "url": "https://httpbin.org/get?hello=world"
-}
+"world"

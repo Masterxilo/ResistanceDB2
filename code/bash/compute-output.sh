@@ -2,4 +2,4 @@
 set -euo pipefail
 trap 'echo FATAL ERROR EXIT CODE $? AT $0:$LINENO' ERR
 
-# TODO freeze version
+jq .args.hello < ./data/input/input.json > ./data/output/output.json

@@ -45,6 +45,7 @@ RUN ./code/bash/make-R-installed.sh
 
 COPY ./code/bash/make-conda-installed.sh /home/ubuntu/ResistanceDB2/code/bash/
 RUN ./code/bash/make-conda-installed.sh
+ENV PATH="/home/ubuntu/mambaforge/bin:${PATH}"
 
 # note: in devcontainer, /workspaces/ResistanceDB2 is mounted to host machine
 

@@ -3,6 +3,7 @@ set -euo pipefail
 trap 'echo FATAL ERROR EXIT CODE $? AT $0:$LINENO' ERR
 
 ./code/bash/make-conda-installed.sh
+./code/bash/make-conda-installed.sh
 
 which python
 python --version | grep --fixed-strings 'Python 3.'
@@ -10,6 +11,9 @@ which pip
 
 ./code/bash/make-R-installed.sh
 which Rscript
+
+sudo apt-get install -y jq
+which jq
 
 # install libraries
 #Rscript -e 'library("tidyverse")'

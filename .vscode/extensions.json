@@ -5,6 +5,7 @@
         "github.copilot",
         "ms-vscode-remote.remote-containers",
         "tfehlmann.snakefmt",
-        "snakemake.snakemake-lang"
+        "snakemake.snakemake-lang",
+        "ms-vscode.makefile-tools"
     ]
 }
