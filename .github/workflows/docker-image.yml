@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ResistanceDB2:$(date +%s) --tag ResistanceDB2:latest
+      run: docker build . --file Dockerfile --tag kouyosgroup/resistancedb:$(date +%s) --tag ResistanceDB2:latest
