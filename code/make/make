@@ -2,8 +2,13 @@
 set -euo pipefail
 trap 'echo FATAL ERROR EXIT CODE $? AT $0:$LINENO' ERR
 
-# jobs is double ncores
+# parallel make: --jobs is double ncores; note: output becomes harder to read/not serialized, I.E. + ./code/bash/fetch-input-json.sh is not followed by its stdout/stderr: % Total   - prefer serial execution during development
+#
 make \
     SHELL='bash -euxo pipefail' --debug \
-    --jobs $(($(nproc) * 2)) \
     --file ./code/make/Makefile
+# move --jobs line up to activate...
+echo \
+    UNUSED OPTIONS: \
+    --jobs $(($(nproc) * 2)) \
+    DONE
