@@ -6,7 +6,7 @@
     "Accept": "*/*", 
     "Host": "httpbin.org", 
     "User-Agent": "curl/7.81.0", 
-    "X-Amzn-Trace-Id": "Root=1-65aa7258-7366b88f6732adb2762dc530"
+    "X-Amzn-Trace-Id": "Root=1-65aa728d-124cd6be56c4697a35300c0c"
   }, 
   "origin": "89.206.81.130", 
   "url": "https://httpbin.org/get?hello=world"
